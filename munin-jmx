@@ -1,0 +1,9 @@
+#!/bin/bash
+
+java -jar /usr/share/munin/plugins/munin-jmx-monitor.jar localhost  9999
+
+
+if [ "$1" = "config" ]; then
+	java -jar /usr/share/munin/plugins/munin-jmx-monitor.jar localhost  9999 config
+fi
+	
